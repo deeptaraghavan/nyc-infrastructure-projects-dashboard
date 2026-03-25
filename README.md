@@ -1,19 +1,19 @@
 # NYC School Construction Authority (NYCSCA) Dashboard
 
-This Power BI dashboard analyzes active school construction projects across New York City to provide visibility into project distribution, funding, and geographic coverage.
+This Power BI dashboard analyzes active school construction projects across New York City, providing visibility into funding distribution, project concentration, and geographic coverage.
 
-The goal of this project is to transform raw project-level data into a clear, decision-support tool that highlights where investments are being made and identifies gaps in funding and project allocation.
+The dashboard is designed to support decision-making by highlighting where investments are being made, how projects are distributed across districts, and where potential data quality gaps exist.
 
 ---
 
 ## Overview
 
-The dashboard provides an interactive view of NYCSCA projects currently under construction, enabling users to explore:
+This project transforms raw NYCSCA project data into an interactive reporting tool that enables users to:
 
-- Project distribution across boroughs and districts  
-- Total construction investment (Prime Construction Award)  
-- Projects with missing or incomplete funding data  
-- Geographic clustering of school construction activity  
+- Analyze construction investment across boroughs and districts  
+- Identify high- and low-funded regions  
+- Track project distribution by category and award size  
+- Detect missing or incomplete data fields  
 
 ---
 
@@ -28,31 +28,48 @@ The dashboard provides an interactive view of NYCSCA projects currently under co
 
 ## Key KPIs
 
-- Total Active Projects  
-- Total Construction Award ($)  
-- Average Award per Project  
-- Projects Missing Award Data  
-- Projects by Borough  
-- Projects by District  
+- Total Active Projects: 1,105  
+- Total Construction Award: $8.9B  
+- Average Award per Project: $8.09M  
+- % Missing Award Data: 0.5%  
 
 ---
 
-## Dashboard Features
+## Dashboard Preview
 
-- **Interactive Filters:** Borough, District, Project Type  
-- **Geospatial Map:** Visualizes project locations across NYC  
-- **KPI Cards:** High-level summary metrics for quick insights  
-- **Breakdown Visuals:** Distribution of projects by borough and district  
-- **Data Quality Tracking:** Highlights missing award values  
+### Portfolio Overview
+![Overview](screenshots/overview.png)
+
+### Project Locations Across NYC
+![Map](screenshots/map.png)
+
+### District-Level Analysis
+![District Analysis](screenshots/district-analysis.png)
+
+### Funding & Award Analysis
+![Award Analysis](screenshots/award-analysis.png)
 
 ---
 
 ## Key Insights
 
-- Manhattan and Brooklyn show the highest concentration of active construction projects  
-- Some projects are missing award values, indicating potential data quality gaps  
-- Investment is unevenly distributed across districts, with some areas receiving significantly higher funding  
-- Geographic visualization helps identify clusters of development and underserved regions  
+- Construction investment is concentrated in Brooklyn, Queens, and Manhattan  
+- The majority of projects fall within the $1M–$25M award range  
+- A small percentage of projects are missing award values, indicating minor data quality gaps  
+- Certain districts receive significantly higher funding, highlighting uneven investment distribution  
+- Geographic clustering reveals dense development zones and potential underserved areas  
+
+---
+
+## Dashboard Features
+
+- **Interactive Filters:** Borough, District, Project Type, Category, Award Tier  
+- **Geospatial Map:** Visualizes project locations with bubble size representing award value  
+- **KPI Cards:** High-level performance metrics  
+- **District-Level Breakdown:** Detailed project distribution by category  
+- **Award Tier Analysis:** Distribution of projects by funding size  
+- **Top District Analysis:** Identifies highest-funded districts  
+- **Data Quality Indicators:** Tracks missing geographic and award data  
 
 ---
 
@@ -61,43 +78,27 @@ The dashboard provides an interactive view of NYCSCA projects currently under co
 - Source: NYC School Construction Authority (NYCSCA) Active Projects dataset (https://data.cityofnewyork.us/Housing-Development/Active-Projects-Under-Construction/8586-3zfm/about_data)
 - "Construction Award" represents the value of the prime construction contract  
 - Some records contain missing values for award amount or geographic coordinates  
-- Data was cleaned and standardized in Power Query before analysis  
-
----
-
-## Files
-
-- `NYCSCA Active Projects Under Construction Final.pbix` – Main Power BI dashboard  
-- `screenshots/` – Dashboard previews  
-
----
-
-## How to Use
-
-1. Download the `.pbix` file  
-2. Open in Power BI Desktop  
-3. Use slicers to filter by borough, district, or project type  
-4. Explore KPIs and map to understand project distribution  
+- Data cleaning and transformation performed in Power Query  
 
 ---
 
 ## Project Goal
 
-This project demonstrates how operational public-sector data can be structured into a scalable reporting framework. It focuses on:
+This project demonstrates how operational public-sector data can be structured into a scalable reporting framework by:
 
-- Defining clear KPIs from raw data  
-- Building a reusable reporting structure  
-- Highlighting data quality issues alongside insights  
-- Delivering a dashboard that supports planning and decision-making  
+- Defining meaningful KPIs from raw data  
+- Building a structured and reusable data model  
+- Incorporating data quality monitoring into reporting  
+- Delivering an intuitive dashboard for stakeholder decision-making  
 
 ---
 
 ## Future Improvements
 
-- Add time-based analysis (project timelines, trends)  
-- Integrate additional datasets (budget vs. actuals, completion status)  
-- Enhance data validation rules for missing fields  
-- Optimize DAX measures for scalability  
+- Add time-series analysis for project timelines  
+- Integrate budget vs. actual cost tracking  
+- Expand validation rules for data completeness  
+- Optimize DAX measures for performance at scale  
 
 ---
 
