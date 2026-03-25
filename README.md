@@ -93,6 +93,12 @@ This project demonstrates how operational public-sector data can be structured i
 
 ---
 
+## Documentation
+
+- [Dashboard Summary](docs/dashboard_summary.pdf)
+
+---
+
 ## Future Improvements
 
 - Add time-series analysis for project timelines  
